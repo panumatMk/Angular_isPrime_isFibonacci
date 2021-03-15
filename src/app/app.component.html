@@ -1,0 +1,14 @@
+<div class="grid">
+  <div>
+    <input [(ngModel)]="column1" type="number" (keyup.enter)="enter()" (change)="onChange()">
+  </div>
+  <div>
+    <select [(ngModel)]="column2" (change)="onChange()">
+      <option value="isPrime">isPrime</option>
+      <option value="isFibonacci">isFibonacci</option>
+    </select>
+  </div>
+  <div>
+    {{column3}}
+  </div>
+</div>

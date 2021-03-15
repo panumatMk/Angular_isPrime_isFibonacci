@@ -1,0 +1,19 @@
+p {
+  font-family: Lato;
+}
+
+body {
+  grid-template-columns: 40px 40px 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 200px minmax(100px, 1fr) 300px;
+  }
+}
