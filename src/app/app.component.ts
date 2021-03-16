@@ -41,8 +41,6 @@ export class AppComponent {
   onChange() {
     const isPrime = this.isPrime(this.column1);
     const isFibanacci = this.isFibanacci(this.column1);
-    console.log("isPrime ", isPrime);
-    console.log("isFibanacci ", isFibanacci);
     if (isPrime && isFibanacci) {
       this.column3 = this.column2 && true;
     } else if (isPrime) {
